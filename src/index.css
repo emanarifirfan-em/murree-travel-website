@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Outfit', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    --font-serif: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+    --font-display: 'Cinzel', 'Playfair Display', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #f8faf9;
+    color: #1a2c22;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-editorial {
+    font-family: var(--font-cormorant);
+  }
+}
+
+/* Custom refined light scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f3;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd8d1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9ab2a4;
+}
+
+/* Subtle soft alpine mist vignette */
+.cinematic-vignette {
+  background: radial-gradient(circle at center, transparent 40%, rgba(248, 250, 249, 0.6) 85%, rgba(248, 250, 249, 0.95) 100%);
+}
+
+.gold-gradient-text {
+  background: linear-gradient(135deg, #a87920 0%, #c49838 45%, #946917 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pine-gradient-text {
+  background: linear-gradient(135deg, #143625 0%, #20573c 50%, #0d281a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Soft alpine cards */
+.alpine-card {
+  background: #ffffff;
+  border: 1px solid #e3ebe6;
+  box-shadow: 0 4px 20px -2px rgba(22, 45, 33, 0.05), 0 2px 6px -1px rgba(22, 45, 33, 0.03);
+}
+
+.alpine-card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.alpine-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 34px -4px rgba(22, 45, 33, 0.08), 0 4px 12px -2px rgba(22, 45, 33, 0.04);
+  border-color: #cbdad1;
+}
+
+/* Leaflet map custom tooltip and popups */
+.leaflet-popup-content-wrapper {
+  background: #ffffff !important;
+  color: #1a2c22 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 25px rgba(20, 40, 30, 0.15) !important;
+  border: 1px solid #dce6e0 !important;
+  font-family: var(--font-sans) !important;
+}
+.leaflet-popup-tip {
+  background: #ffffff !important;
+}

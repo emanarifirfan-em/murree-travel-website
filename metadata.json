@@ -1,0 +1,6 @@
+{
+  "name": "Murree Classic Travel & Tour",
+  "description": "Premium mountain travel experiences, luxury hotel reservations, 4x4 transport, and curated journeys across Murree and the Galiyat, Pakistan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
